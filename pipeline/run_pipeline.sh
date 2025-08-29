@@ -26,7 +26,7 @@ python step1_generate_weights.py \
 # Step 2: Select M data subsets according to each weight combination
 echo "[Step 2] Select data for pre-training proxy models"
 python step2_select_data.py \
-    --inputs "$OUT_DIR/toy.jsonl" \
+    --inputs "../example_data/toy.jsonl" \
     --output "$OUT_DIR/filtered.jsonl" \
     --percentile 85 \
     --weights_json "$OUT_DIR/weights.json" \
